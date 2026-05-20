@@ -1,0 +1,40 @@
+  
+  //using styles setTimeout together
+  let x =document.querySelectorAll(".yoo");
+console.log(x);
+let y = document.querySelector("h2");
+y.style.color = "red";
+y.style.fontFamily = "Arial";
+setTimeout(function() {
+    y.innerHTML = "Hello World"; }, 2000);
+
+//CHANGE CHARACTERS AS PER COLOUR : 
+//ele1=doremon
+//ele2=shinchan
+//ele3=oggy
+let x = document.getElementById("ele1");
+x.style.fontFamily = "Arial";
+x.addEventListener("click", function() {
+    x.style.backgroundColor = "lightblue";
+    x.style.color = "white";});
+console.log(x); 
+let y = document.getElementById("ele2");
+y.style.fontFamily = "Arial";
+y.addEventListener("mouseenter", function() {
+    y.style.backgroundColor = "red";
+    y.style.color = "yellow";});
+console.log(y); 
+
+//on off mouseover
+y.addEventListener("mouseleave", function() {
+    y.style.backgroundColor = "white";
+    y.style.color = "black";});
+console.log(y); 
+//if i click ele2 this ele3 will change
+let z = document.getElementById("ele3");
+z.style.fontFamily = "Arial";
+y.addEventListener("click", function() {
+    z.style.backgroundColor = "lightgreen";
+    z.style.color = "white";});
+console.log(z); 
+
